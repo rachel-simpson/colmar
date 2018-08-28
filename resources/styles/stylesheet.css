@@ -48,3 +48,62 @@ nav a {
   color: DarkGray;
   font-weight: normal;
 }
+
+/* banner */
+
+.jumbotron {
+   background-image: linear-gradient(hsl(52, 80%, 60%), hsl(52, 80%, 50%))
+}
+
+.container {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.one {
+  margin: 32px 24px;
+  width: 60%;
+}
+
+.one img {
+  box-shadow: 3px 3px 3px grey;
+  width: 100%;
+  height: auto;
+}
+
+.two {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0 5%;
+  width: 40%;
+}
+
+.two h1 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 5.6rem;
+  font-weight: bold;
+  padding-bottom: 40px;
+}
+
+.two p {
+  font-size: 2.4rem;
+  padding-bottom: 40px;
+}
+
+#start {
+  border: 1px solid black;
+  cursor: pointer;
+  padding: 8px 0;
+  text-align: center;
+}
+
+#start:hover {
+  background-color: black;
+  color: white;
+}
+
+#start:active {
+  background-color: black;
+  color: hsl(52, 80%, 50%);
+}
