@@ -1,0 +1,50 @@
+/* page styles */
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+
+header {
+  background-color: white;
+  height: 64px;
+  justify-content: space-between;
+}
+
+nav {
+  margin-right: 24px;
+}
+
+nav a {
+  color: black;
+  font-size: 1.8rem;
+  padding-left: 16px;
+  text-decoration: none;
+}
+
+.logo {
+  height: 32px;
+  margin-left: 24px;
+}
+
+.logo img {
+  padding-right: 5px;
+}
+
+.logo span {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: .2rem;
+}
+
+#academy {
+  color: DarkGray;
+  font-weight: normal;
+}
