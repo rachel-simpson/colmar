@@ -53,8 +53,16 @@ nav {
 nav a {
   color: black;
   font-size: 1.8rem;
-  padding-left: 16px;
+  margin-left: 16px;
   text-decoration: none;
+}
+
+/* dynamic nav links */
+
+nav a:hover {
+  border-bottom: 2px solid hsl(52, 80%, 50%);
+  font-weight: bold;
+  padding-bottom: 2px;
 }
 
 .logo {
@@ -113,6 +121,31 @@ nav a {
   height: auto;
 }
 
+/* dynamic image overlay */
+
+.jumbotron-anchor {
+  position: relative;
+}
+
+#jumbotron-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  width: 100px;
+  height: auto;
+  z-index: 1;
+}
+
+.jumbotron-anchor:hover .banner {
+  opacity: .5;
+}
+
+.jumbotron-anchor:hover #jumbotron-overlay {
+  display: inherit;
+}
+
 /* dynamic start button */
 
 #start {
@@ -152,7 +185,7 @@ nav a {
 
 .content-image {
   box-sizing: border-box;
-  margin: 0 16px 16px 16px;
+  margin: 16px;
   width: 35%;
 }
 
@@ -174,6 +207,37 @@ nav a {
 #author {
   font-size: 1.4rem;
   margin-bottom: 32px;
+}
+
+/* dynamic image overlay */
+
+.info-anchor {
+  position: relative;
+}
+
+#info-overlay {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  width: 100px;
+  height: auto;
+  z-index: 1;
+}
+
+.info-anchor:hover .banner {
+  opacity: .5;
+}
+
+.info-anchor:hover #info-overlay {
+  display: inherit;
+}
+
+/* dynamic content-box effect */
+
+.content-box:hover {
+  background-color: lightgray;
 }
 
 /* courses section */
@@ -212,6 +276,21 @@ nav a {
 
 .course-text p {
   padding-top: 24px;
+}
+
+/* dynamic course item effects */
+
+.course-box:hover {
+  box-shadow: 5px 5px 5px 5px hsl(52, 80%, 60%);
+  cursor: pointer;
+}
+
+.course-box:hover h3 {
+  color: hsl(52, 80%, 60%);
+}
+
+.course-box:active {
+  background-color: hsla(52, 80%, 60%, .4);
 }
 
 /* showcase section */
