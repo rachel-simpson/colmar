@@ -1,41 +1,198 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Montserrat:300,400,500,700" rel="stylesheet">
-    <link rel="stylesheet" href="./resources/styles/reset.css">
-    <link rel="stylesheet" href="./resources/styles/stylesheet.css">
-    <title>Colmar Academy</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Montserrat:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./resources/styles/reset.css">
+  <link rel="stylesheet" href="./resources/styles/stylesheet.css">
+  <title>Colmar Academy</title>
+</head>
+<body>
 
-    <!-- header section -->
-    <header class="flex">
-      <!-- logo and title -->
-      <div class="logo flex">
-        <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
-        <span>COLMAR</span><span id="academy">ACADEMY</span>
-      </div>
-      <!-- nav bar -->
-      <nav>
-        <span><a href="#">On Campus</a></span>
-        <span><a href="#">Online</a></span>
-        <span><a href="#">For Companies</a></span>
-        <span><a href="#">Sign in</a></span>
-      </nav>
-    </header>
+  <!-- header section -->
+  <header class="flex">
+    <!-- logo and title -->
+    <div class="logo flex">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo">
+      <span>COLMAR</span><span id="academy">ACADEMY</span>
+    </div>
+    <!-- nav bar -->
+    <nav>
+      <span><a href="#">On Campus</a></span>
+      <span><a href="#">Online</a></span>
+      <span><a href="#">For Companies</a></span>
+      <span><a href="#">Sign in</a></span>
+    </nav>
+  </header>
 
-    <!-- main banner section -->
-    <section class="jumbotron flex">
-      <div class="container one">
-        <img src="./resources/images/banner.jpg" alt="Study Group">
-      </div>
-      <div class="container two flex">
-          <h1>Learn something new everyday</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <p id="start">Start here</p>
-      </div>
-    </section>
+  <!-- main banner section -->
+  <section class="jumbotron flex">
+    <!-- jumbotron image -->
+    <div class="container one">
+      <img src="./resources/images/banner.jpg" alt="Study group" class="banner">
+    </div>
+    <!-- main headline -->
+    <div class="container two flex-column headline">
+      <h1>Learn something new everyday</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <p id="start">Start here</p>
+    </div>
+  </section>
 
-  </body>
+  <!-- info section -->
+  <section class="info flex">
+    <!-- section image and headline -->
+    <div class="container one">
+      <img src="./resources/images/information-main.jpg" alt="Student reading a textbook" class="banner">
+      <h1>It doesn't hurt to keep practising</h1>
+      <p>"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      <aside id="author">Emanuel, Sr Strategist at Hiring.com</aside>
+    </div>
+    <!-- info options -->
+    <div class="container two">
+      <div class="content-box flex">
+        <div class="content-image">
+          <img src="./resources/images/information-orientation.jpg" alt="Orientation icon">
+        </div>
+        <div class="content-text flex-column">
+          <h3>Orientation Date</h3>
+          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="content-box flex">
+        <div class="content-image">
+          <img src="./resources/images/information-campus.jpg" alt="Campus icon">
+        </div>
+        <div class="content-text flex-column">
+          <h3>Our campus</h3>
+          <p>Find which campus is close by you</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+      <div class="content-box flex">
+        <div class="content-image">
+          <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture icon">
+        </div>
+        <div class="content-text flex-column">
+          <h3>Our guest lecture</h3>
+          <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+          <a href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- courses section -->
+  <section class="courses">
+    <h2>START LEARNING</h2>
+    <div class="course-container flex">
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-software.jpg" alt="Software engineering course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Software engineering</h3>
+          <p>COURSES</p>
+          <p>Web Development, Mobile Development, iOT, APIs</p>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-computer-art.jpg" alt="Computer art course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Computer art</h3>
+          <p>COURSES</p>
+          <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-design.jpg" alt="Design course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Design</h3>
+          <p>COURSES</p>
+          <p>User Experience Design, User Research, Visual Design</p>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-data.jpg" alt="Data course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Data</h3>
+          <p>COURSES</p>
+          <p>Data Science, Big Data, SQL, Data Visualization</p>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-business.jpg" alt="Business course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Business</h3>
+          <p>COURSES</p>
+          <p>Product Development, Business Development, Startup</p>
+        </div>
+      </div>
+      <div class="course-box">
+        <div class="course-image">
+          <img src="./resources/images/course-marketing.jpg" alt="Marketing course">
+        </div>
+        <div class="course-text flex-column">
+          <h3>Marketing</h3>
+          <p>COURSES</p>
+          <p>Analytics, Content Marketing, Mobile Marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- showcase section -->
+  <section class="showcase flex">
+    <!-- video area -->
+    <div class="container one">
+      <video src="./resources/videos/thesis.mp4" autoplay muted class="banner"></video>
+      <h1>Reimagine Urban</h1>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+    </div>
+    <!-- showcase info -->
+    <div class="container two">
+      <div class="content-box flex">
+        <div class="content-image">
+          <img src="./resources/images/thesis-fisma.jpg" alt="Fisma icon">
+        </div>
+        <div class="content-text flex-column">
+          <h3>Fisma: Design and Prototype</h3>
+          <p>Designer showcase of new prototype product</p>
+        </div>
+      </div>
+      <div class="content-box flex">
+        <div class="content-image">
+          <img src="./resources/images/thesis-now-and-then.jpg" alt="Thesis (now-and-then) icon">
+        </div>
+        <div class="content-text flex-column">
+          <h3>Now and then</h3>
+          <p>Research about study in New York</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="flex">
+    <!-- logo and title -->
+    <div class="logo flex">
+      <p>&copy; 2016 Colmar Academy. Rights reserved.</p>
+    </div>
+    <!-- nav bar -->
+    <nav>
+      <span><a href="#">Terms</a></span>
+      <span><a href="#">Privacy</a></span>
+    </nav>
+  </footer>
+
+</body>
 </html>
