@@ -204,6 +204,12 @@ nav a:hover {
   text-decoration: none;
 }
 
+/* dynamic read more link */
+
+.content-text a:hover {
+  font-weight: bold;
+}
+
 #author {
   font-size: 1.4rem;
   margin-bottom: 32px;
@@ -310,4 +316,40 @@ footer {
 
 footer p {
   font-size: 1.2rem;
+}
+
+/* generic media query */
+
+@media only screen and (max-width: 1080px) {
+  .jumbotron,
+  .info,
+  .showcase {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .content-text {
+    text-align: left;
+  }
+
+  .content-text p:first-of-type {
+    display: none;
+  }
+
+  .content-text a {
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 3.6rem;
+  }
+}
+
+/* mobile media query */
+
+@media only screen and (max-width: 830px) {
+
 }
