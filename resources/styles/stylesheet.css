@@ -3,6 +3,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
+  min-width: 400px;
 }
 
 h1 {
@@ -476,7 +477,6 @@ footer p {
 
   footer,
   footer.logo {
-    height: auto;
     margin: 0
   }
 }
